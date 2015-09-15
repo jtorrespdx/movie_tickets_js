@@ -3,6 +3,8 @@
   <head>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>Movie Ticket Search</title>
@@ -27,13 +29,13 @@
                           </div>
                           <div class="form-group">
                               <label for="movie-time">Select Time</label>
-                              <input type="time" name="movie-time" id="movie-time" class="form-control">
+                              <input type="time" name="movie-time" id="movie-time" class="form-control" required>
                           </div>
                           <div class="form-group">
                               <label for="viewer-age">Enter age</label>
-                              <input type="number" name="viewer-age" id="viewer-age" class="form-control">
+                              <input type="number" name="viewer-age" id="viewer-age" class="form-control" required>
                           </div>
-                          <button class="btn btn-success" type="submit">Find your movie!</button>
+                          <button class="btn btn-danger" type="submit">Find your movie!</button>
                       </form>
                   </div>
               </div>

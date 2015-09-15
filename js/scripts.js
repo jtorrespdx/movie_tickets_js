@@ -19,6 +19,7 @@ function calculatePrice(ticket) {
 $(document).ready(function() {
   $("form#new-ticket").submit(function(event) {
     event.preventDefault();
+    $(".btn").fadeOut(600);
 
     var movieName = $("select#movie-name").val();
     var movieTime = parseInt($("input#movie-time").val());
@@ -31,5 +32,7 @@ $(document).ready(function() {
 
     $("#ticket-price").text(ticketPrice);
     $("#results").show();
+    $("#results").addClass('animated zoomInLeft');
+    // $("#results").fadeIn(4000);
   });
 });
