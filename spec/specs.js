@@ -19,8 +19,14 @@ describe('calculatePrice', function() {
     expect(calculatePrice(testTicket)).to.equal(5);
   });
 
-  it("if a viewer is under the age of 12, it discouts a ticket by $5", function() {
+  it("if a viewer is under the age of 12, it discoun  ts a ticket by $5", function() {
     var testTicket = new Ticket("The Last Scoop of IceCream", 1300, 9, 10);
     expect(calculatePrice(testTicket)).to.equal(5);
+  });
+
+
+  it("if a viewer is neither a child or senior and is viewing a movie after 1700", function() {
+    var testTicket = new Ticket("No Longer Special", 2300, 43, 10);
+    expect(calculatePrice(testTicket)).to.equal(10);
   });
 });

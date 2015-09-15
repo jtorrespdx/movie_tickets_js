@@ -6,7 +6,7 @@ function Ticket(movieName, movieTime, viewerAge, originalPrice) {
 }
 
 function calculatePrice(ticket) {
-  if (ticket.viewerAge >=65) {
+  if (ticket.viewerAge >=65 || ticket.viewerAge <= 12) {
     return ticket.originalPrice -=5;
   } else if (ticket.movieTime <= 1700) {
     return ticket.originalPrice -= 2;

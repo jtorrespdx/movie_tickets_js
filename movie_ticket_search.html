@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Ticket Search</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Ticket Search</h1>
+      <h2>Search for tickets for tonight's movies!</h2>
+            <div class="col-md-3">
+                <form id="new-ticket">
+                    <div class="form-group">
+                        <select class="form-control" id="movie-name">
+                            <option value="The Final Final Impact">The Final Final Impact</option>
+                            <option value="Final Destination: 17">Final Destination: 17</option>
+                            <option value="The Last Moustache">The Last Moustache</option>
+                            <option value="3 Hours in Paris">3 Hours in Paris</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="movie-time">Select Time</label>
+                        <input type="time" name="movie-time" id="movie-time" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="viewer-age">Enter age</label>
+                        <input type="number" name="viewer-age" id="viewer-age" class="form-control">
+                    </div>
+                </form>
+            </div>
+
+    </div>
+  </body>
+</html>
