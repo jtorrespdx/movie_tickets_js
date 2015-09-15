@@ -8,36 +8,39 @@
     <title>Movie Ticket Search</title>
   </head>
   <body>
+      <video autoplay loop id="bgvid">
+      <source src="video_background.mp4" type="video/mp4">
+      </video>
     <div class="container">
-      <h1>Movie Ticket Search</h1>
-      <h2>Search for tickets for tonight's movies!</h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <form id="new-ticket">
-                        <div class="form-group">
-                            <select class="form-control" id="movie-name">
-                                <option value="The Final Final Impact">The Final Final Impact</option>
-                                <option value="Final Destination: 17">Final Destination: 17</option>
-                                <option value="The Last Moustache">The Last Moustache</option>
-                                <option value="3 Hours in Paris">3 Hours in Paris</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="movie-time">Select Time</label>
-                            <input type="time" name="movie-time" id="movie-time" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="viewer-age">Enter age</label>
-                            <input type="number" name="viewer-age" id="viewer-age" class="form-control">
-                        </div>
-                        <button class="btn btn-success" type="submit">Find your movie!</button>
-                    </form>
-                </div>
-            </div>
+        <h1>Movie Ticket Search</h1>
+        <h2>Search for tickets for tonight's movies!</h2>
+              <div class="row">
+                  <div class="col-md-3">
+                      <form id="new-ticket">
+                          <div class="form-group">
+                              <select class="form-control" id="movie-name">
+                                  <option value="The Final Final Impact">The Final Final Impact</option>
+                                  <option value="Final Destination: 17">Final Destination: 17</option>
+                                  <option value="The Last Moustache">The Last Moustache</option>
+                                  <option value="3 Hours in Paris">3 Hours in Paris</option>
+                              </select>
+                          </div>
+                          <div class="form-group">
+                              <label for="movie-time">Select Time</label>
+                              <input type="time" name="movie-time" id="movie-time" class="form-control">
+                          </div>
+                          <div class="form-group">
+                              <label for="viewer-age">Enter age</label>
+                              <input type="number" name="viewer-age" id="viewer-age" class="form-control">
+                          </div>
+                          <button class="btn btn-success" type="submit">Find your movie!</button>
+                      </form>
+                  </div>
+              </div>
 
-        <div id="results">
+          <div id="results">
             <h1>$<span id="ticket-price"></span></h1>
         </div>
-    </div>
+  </div>
   </body>
 </html>
